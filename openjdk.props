@@ -1,8 +1,8 @@
 ﻿<Project>
     <PropertyGroup>
         <OpenJdkDir>$(MSBuildThisFileDirectory)openjdk</OpenJdkDir>
-        <OpenJdkVersion>OpenJDK 8u45 b14</OpenJdkVersion>
-        <OpenJdkFullVersion>1.8.0_45-b14</OpenJdkFullVersion>
+        <OpenJdkVersion>OpenJDK 8u312 ga</OpenJdkVersion>
+        <OpenJdkFullVersion>1.8.0_312-ga</OpenJdkFullVersion>
         <OpenJdkVendor>Oracle</OpenJdkVendor>
         <OpenJdkImplementationVersion>1.8.0</OpenJdkImplementationVersion>
         <OpenJdkImplementationVendor>Oracle Corporation</OpenJdkImplementationVendor>
@@ -786,6 +786,7 @@
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM1364.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM1381.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM1383.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM1166.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM273.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM277.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\nio\cs\ext\IBM278.java" />
@@ -3689,19 +3690,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\bcel\internal\util\Repository.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\bcel\internal\util\SecuritySupport.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\bcel\internal\util\SyntheticRepository.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\CharacterArrayCharacterIterator.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\CharacterIterator.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\RE.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\ReaderCharacterIterator.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\recompile.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\RECompiler.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\REDebugCompiler.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\REProgram.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\RESyntaxException.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\RETest.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\REUtil.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\StreamCharacterIterator.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\regexp\internal\StringCharacterIterator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\extensions\ExpressionContext.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\lib\ExsltBase.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\lib\ExsltCommon.java" />
@@ -3727,8 +3715,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\res\XSLTErrorResources_zh_TW.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\templates\Constants.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\ConfigurationError.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\FactoryImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\FeatureManager.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\FeaturePropertyBase.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\ObjectFactory.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\utils\SecuritySupport.java" />
@@ -3986,7 +3972,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\ErrorMessages_sv.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\ErrorMessages_zh_CN.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\ErrorMessages_zh_TW.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\Hashtable.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\InternalRuntimeError.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\MessageHandler.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xalan\internal\xsltc\runtime\Node.java" />
@@ -4425,7 +4410,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\SymbolTable.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\SynchronizedSymbolTable.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\TeeXMLDocumentFilterImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\TypeInfoImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\URI.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\XML11Char.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\XMLAttributesImpl.java" />
@@ -4544,7 +4528,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTM.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMAxisIterator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMAxisTraverser.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMConfigurationException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMDOMException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\dtm\DTMFilter.java" />
@@ -4679,10 +4662,7 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\ToXMLStream.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\TransformStateSetter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\TreeWalker.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\Utils.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\AttList.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\BoolStack.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\DOM2Helper.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\Messages.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\MsgKey.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\serializer\utils\SerializerMessages.java" />
@@ -4716,8 +4696,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\DefaultErrorHandler.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\DOM2Helper.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\DOMBuilder.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\DOMHelper.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\DOMOrder.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\ElemDesc.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\FastStringBuffer.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\Hashtree2Node.java" />
@@ -4727,7 +4705,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\LocaleUtility.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\MutableAttrListImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\NameSpace.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\NamespaceSupport2.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\NodeConsumer.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\NodeVector.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xml\internal\utils\NSInfo.java" />
@@ -8341,7 +8318,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\AESKeyGenerator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\AESParameters.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\AESWrapCipher.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\ai.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\ARCFOURCipher.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\BlockCipherParamsCore.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\BlowfishCipher.java" />
@@ -8397,7 +8373,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\OAEPParameters.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\OutputFeedback.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\Padding.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\PBECipherCore.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\PBEKey.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\PBEKeyFactory.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\PBEParameters.java" />
@@ -9020,9 +8995,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\CanonicalizerSpi.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\helper\AttrCompare.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\helper\C14nHelper.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer11.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer11_OmitComments.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer11_WithComments.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer20010315.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer20010315Excl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer20010315ExclOmitComments.java" />
@@ -9034,26 +9006,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\NameSpaceSymbTable.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\UtfHelpper.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\InvalidCanonicalizerException.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\AbstractSerializer.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\AgreementMethod.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\CipherData.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\CipherReference.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\CipherValue.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\DocumentSerializer.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptedData.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptedKey.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptedType.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptionMethod.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptionProperties.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\EncryptionProperty.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\Reference.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\ReferenceList.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\Serializer.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\Transforms.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\XMLCipher.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\XMLCipherInput.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\XMLCipherParameters.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\encryption\XMLEncryptionException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\exceptions\AlgorithmAlreadyRegisteredException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\exceptions\Base64DecodingException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\exceptions\XMLSecurityException.java" />
@@ -9083,7 +9035,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\KeyInfo.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\DEREncodedKeyValueResolver.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\DSAKeyValueResolver.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\EncryptedKeyResolver.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\KeyInfoReferenceResolver.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\PrivateKeyResolver.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\RetrievalMethodResolver.java" />
@@ -9155,11 +9106,8 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\Constants.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\DigesterOutputStream.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\DOMNamespaceContext.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\ElementChecker.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\ElementCheckerImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\ElementProxy.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\EncryptionConstants.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\EncryptionElementProxy.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\HelperNodeList.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\I18n.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\IdResolver.java" />
@@ -12887,11 +12835,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\font\TextSource.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\font\TextSourceLabel.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\font\Underline.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\anon\AnonymousClassLoader.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\anon\ConstantPoolParser.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\anon\ConstantPoolPatch.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\anon\ConstantPoolVisitor.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\anon\InvalidConstantPoolFormatException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\empty\Empty.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\package-info.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\invoke\util\BytecodeDescriptor.java" />
@@ -13558,12 +13501,9 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\action\GetPropertyAction.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\action\OpenFileInputStreamAction.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\action\PutAllAction.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\CurveDB.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\ECKeyFactory.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\ECParameters.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\ECPrivateKeyImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\ECPublicKeyImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\NamedCurve.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\SunEC.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ec\SunECEntries.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\internal\interfaces\TlsMasterSecret.java" />
@@ -13799,15 +13739,12 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\PKIXMasterCertPathValidator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\PolicyChecker.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\PolicyNodeImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\ReverseBuilder.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\ReverseState.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\RevocationChecker.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\ssl\SSLServerCertStore.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\ssl\SSLServerCertStoreHelper.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\State.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\SunCertPathBuilder.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\SunCertPathBuilderException.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\SunCertPathBuilderParameters.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\SunCertPathBuilderResult.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\UntrustedChecker.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\URICertStore.java" />
@@ -13854,57 +13791,29 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\RSASignature.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\SunRsaSign.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\SunRsaSignEntries.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Alerts.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\AppInputStream.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\AppOutputStream.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Authenticator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\BaseSSLSocketImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ByteBufferInputStream.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CipherBox.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CipherSuite.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CipherSuiteList.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ClientHandshaker.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Debug.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\DHClientKeyExchange.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\DHCrypt.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ECDHClientKeyExchange.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ECDHCrypt.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EngineArgs.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EngineInputRecord.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EngineOutputRecord.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EngineWriter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EphemeralKeyManager.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ExtensionType.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeHash.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeInStream.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeMessage.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeOutStream.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Handshaker.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HelloExtension.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HelloExtensions.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\InputRecord.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\JsseJce.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KerberosClientKeyExchange.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KeyManagerFactoryImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\krb5\KerberosClientKeyExchangeImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\krb5\KerberosPreMasterSecret.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\krb5\Krb5ProxyImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Krb5Helper.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Krb5Proxy.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\MAC.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\OutputRecord.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ProtocolList.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ProtocolVersion.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RandomCookie.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Record.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RenegotiationInfoExtension.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RSAClientKeyExchange.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RSASignature.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerHandshaker.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerNameExtension.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SessionId.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SignatureAlgorithmsExtension.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SignatureAndHashAlgorithm.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLAlgorithmConstraints.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLContextImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLEngineImpl.java" />
@@ -13916,10 +13825,7 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLSocketImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SunJSSE.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SunX509KeyManagerImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SupportedEllipticCurvesExtension.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SupportedEllipticPointFormatsExtension.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\TrustManagerFactoryImpl.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\UnknownExtension.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Utilities.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\X509KeyManagerImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\X509TrustManagerImpl.java" />
@@ -14014,7 +13920,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\SignatureFileVerifier.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\UntrustedCertificates.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\EndEntityChecker.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\KeyStores.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\PKIXValidator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\SimpleValidator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\Validator.java" />
@@ -14604,7 +14509,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\Extension.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\InternalLocaleBuilder.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\LanguageTag.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\LocaleEquivalentMaps.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\LocaleExtensions.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\LocaleMatcher.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\util\locale\LocaleObjectCache.java" />
@@ -15152,7 +15056,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\Gen.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\Items.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\JNIWriter.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\LVTRanges.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\Pool.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\Profile.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javac\jvm\Target.java" />
@@ -15543,7 +15446,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\IntDeque.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\ApplySpecialization.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\AssignSymbols.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\AstSerializer.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\BranchOptimizer.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\ClassEmitter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\CodeGenerator.java" />
@@ -15556,7 +15458,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\Condition.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\ConstantData.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\DumpBytecode.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\Emitter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\FieldObjectCreator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\FindScopeDepths.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\FoldConstants.java" />
@@ -15575,7 +15476,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\OptimisticTypesPersistence.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\ProgramPoints.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\ReplaceCompileUnits.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\RuntimeCallSite.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\SharedScopeCall.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\SpillObjectCreator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\SplitIntoFunctions.java" />
@@ -15644,6 +15544,7 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\RuntimeNode.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\SetSplitState.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\SplitNode.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\Splittable.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\SplitReturn.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\Statement.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\SwitchNode.java" />
@@ -15668,12 +15569,12 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\debug\PrintVisitor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\visitor\NodeOperatorVisitor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\visitor\NodeVisitor.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\visitor\SimpleNodeVisitor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\lookup\Lookup.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\lookup\MethodHandleFactory.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\lookup\MethodHandleFunctionality.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\AccessorPropertyDescriptor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\ArrayBufferView.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\BoundScriptFunctionImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\DataPropertyDescriptor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\GenericPropertyDescriptor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\Global.java" />
@@ -15713,8 +15614,6 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\NativeUint8ClampedArray.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\NativeURIError.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\package-info.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\PrototypeObject.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\ScriptFunctionImpl.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\annotations\Attribute.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\annotations\Constructor.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\objects\annotations\Function.java" />
@@ -15759,13 +15658,15 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\GlobalConstants.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\GlobalFunctions.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\JSErrorType.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\JSObjectListAdapter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\JSONFunctions.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\JSType.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\ListAdapter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\NashornLoader.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\NativeJavaPackage.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\NumberToString.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\AstSerializer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\SharedPropertyMap.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\JSONListAdapter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\OptimisticBuiltins.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\OptimisticReturnFilters.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\ParserException.java" />
@@ -15775,6 +15676,7 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\PropertyHashMap.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\PropertyListeners.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\PropertyMap.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\PrototypeObject.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\QuotedStringTokenizer.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\RecompilableScriptFunctionData.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\RewriteException.java" />
@@ -15813,13 +15715,11 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\IntArrayData.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\IntElements.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\IntOrLongElements.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\InvalidArrayIndexException.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\IteratorAction.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\JavaArrayIterator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\JavaListIterator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\JSObjectIterator.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\LengthNotWritableFilter.java" />
-        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\LongArrayData.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\NonExtensibleArrayFilter.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\NumberArrayData.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\runtime\arrays\NumericElements.java" />
@@ -15952,6 +15852,181 @@
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\scripts\JO.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\scripts\JS.java" />
         <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\tools\Shell.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\tools\ShellFunctions.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\ObjectInputFilter.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\ObjectStreamClassValidator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaOISAccess.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\RegisteredDomain.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\JarConstraintsParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\MessageDigestSpi2.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\SignatureUtil.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\PSSParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\net\ExtendedOptionsHelper.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\corba\src\share\classes\com\sun\corba\se\impl\ior\IORTypeCheckRegistryImpl.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\corba\src\share\classes\com\sun\corba\se\spi\ior\IORTypeCheckRegistry.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\jdk\xml\internal\JdkXmlUtils.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\jdk\xml\internal\JdkXmlFeatures.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\dom\AbortException.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxws\src\share\jaxws_classes\com\sun\xml\internal\bind\marshaller\NoEscapeHandler.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\jdk\internal\util\StaticProperty.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\AnchorCertificates.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\ConstraintsParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\SecurityProviderConstants.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\SecurityProperties.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\jndi\ldap\spi\LdapDnsProviderResult.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaSecuritySignatureAccess.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer11_OmitComments.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\Canonicalizer11_WithComments.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\implementations\ECKeyValueResolver.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\content\keyvalues\ECKeyValue.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\rmi\server\DeserializationChecker.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\naming\internal\ObjectFactoriesFilter.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\jdk\internal\platform\Container.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\jdk\internal\platform\Metrics.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\ArrayUtil.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\ECParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\CurveDB.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\NamedCurve.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\Pem.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\RSAUtil.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLCipher.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SupportedGroupsExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\DHKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CipherType.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLExtensions.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLHandshake.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLHandshakeBinding.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\X509Authentication.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\AbstractAlgorithmConstraints.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\AlgorithmDecomposer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\print\DialogOnTop.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\rsa\MGF1.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\jndi\dns\DNSDatagramSocketFactory.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\implementations\XmlAttrStack.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\signature\VerifiedReference.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\ResponderId.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\KeyStoreDelegator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLConsumer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeProducer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLStringizer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Plaintext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeAbsence.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeConsumer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ConnectionContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\TransportContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Ciphertext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLAuthentication.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLPossessionGenerator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLKeyAgreementGenerator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SignatureScheme.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLPossession.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLKeyAgreement.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HandshakeContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLTransport.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLConfiguration.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Alert.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\StatusResponseManager.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HelloCookieManager.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLKeyDerivationGenerator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLKeyDerivation.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLCredentials.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\ByteArrays.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ClientHello.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertStatusExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ClientAuthType.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerHandshakeContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\TrustStoreUtil.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLLogger.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\PKIXExtendedParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\awt\OverrideNativeWindowHandle.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\javadoc\JavaScriptScanner.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\util\LegacyAlgorithmConstraints.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLProducer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ClientHandshakeContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\slf4j\internal\Logger.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\slf4j\internal\LoggerFactory.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ECDHKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertificateMessage.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RSAKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\langtools\src\share\classes\com\sun\tools\doclets\internal\toolkit\util\FatalError.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SupportedVersionsExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\com\sun\org\apache\xerces\internal\util\PrimeNumberSequenceGenerator.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jaxp\src\jdk\xml\internal\SecuritySupport.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\jndi\ldap\LdapDnsProviderService.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\jndi\ldap\spi\LdapDnsProvider.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\algorithms\implementations\ECDSAUtils.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\utils\resolver\ClassLoaderUtils.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\c14n\ClassLoaderUtils.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertificateVerify.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertificateRequest.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\EncryptedExtensions.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\NewSessionTicket.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerHelloDone.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerHello.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HelloRequest.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\provider\certpath\CertPathConstraintsParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\krb5\internal\ReferralsCache.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\krb5\internal\PaPacOptions.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\org\jcp\xml\dsig\internal\dom\Policy.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\org\apache\xml\internal\security\keys\keyresolver\ClassLoaderUtils.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\PskKeyExchangeModesExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\AlpnExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ExtendedMasterSecretExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertSignAlgsExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ECPointFormatsExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\MaxFragExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KeyUpdate.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertificateStatus.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\Finished.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ServerKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ClientKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ContentType.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\PredefinedDHParameterSpecs.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\PreSharedKeyExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RenegoInfoExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KeyShareExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CertificateAuthoritiesExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\CookieExtension.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLTrafficKeyDerivation.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLMasterKeyDerivation.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLAlgorithmDecomposer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ChangeCipherSpec.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\krb5\KrbClientKeyExchangeHelperImpl.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KrbClientKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KrbClientKeyExchangeHelper.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\ECDHServerKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\DHServerKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\RSAServerKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\KrbKeyExchange.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLSecretDerivation.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\HKDF.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLRecord.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\PostHandshakeContext.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\TrustStoreManager.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\tools\jarsigner\JarSignerParameters.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLEngineOutputRecord.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLBasicKeyDerivation.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\jndi\ldap\DefaultLdapDnsProvider.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\gensrc\sun\util\locale\LocaleEquivalentMaps.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\CADistrustPolicy.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLSocketInputRecord.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\validator\SymantecTLSPolicy.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLSocketOutputRecord.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\security\ssl\SSLEngineInputRecord.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaObjectInputStreamReadString.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaxCryptoSealedObjectAccess.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaLangRefAccess.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\sun\misc\JavaObjectInputStreamAccess.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\RangeUtil.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\internal\dynalink\linker\MethodHandleTransformer.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\api\scripting\DefaultValueImpl.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\ir\JumpToInlinedFinally.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\codegen\CacheAst.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\nashorn\internal\scripts\JD.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\nashorn\src\jdk\internal\dynalink\support\DefaultInternalObjectFilter.java" />
+        <OpenJdkSource Include="$(OpenJdkDir)\jdk\src\share\classes\com\sun\crypto\provider\Preconditions.java" />
     </ItemGroup>
 
     <ItemGroup>
@@ -16016,10 +16091,9 @@
         <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\cmm\**\*" ImagePath="lib\cmm\%(RecursiveDir)%(Filename)%(Extension)" />
         <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\management\**\*" ImagePath="lib\management\%(RecursiveDir)%(Filename)%(Extension)" />
         <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\**\*" ImagePath="lib\security\%(Filename)%(Extension)" />
-        <OpenJdkImageContent Remove="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\cacerts" />
-        <OpenJdkImageContent Remove="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\local_policy.jar" />
-        <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\US_export_policy.jar" ImagePath="lib\security\local_policy.jar" />
-        <OpenJdkImageContent Include="$(OpenJdkDir)\jdk\src\windows\lib\*" ImagePath="lib\%(Filename)%(Extension)" />
+        <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\**\*.jar" VfsPath="lib\security\%(RecursiveDir)%(Filename)%(Extension)" />
+        <OpenJdkImageContent Include="$(OpenJdkDir)\build\linux-x86_64-normal-server-release\jdk\lib\security\java.security" VfsPath="lib\security\java.security" />
+        <OpenJdkImageContent Include="$(OpenJdkDir)\jdk\src\windows\lib\**\*" VfsPath="lib\%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 
 </Project>

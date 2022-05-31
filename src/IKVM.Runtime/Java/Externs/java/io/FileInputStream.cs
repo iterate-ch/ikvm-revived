@@ -56,7 +56,7 @@ namespace IKVM.Java.Externs.java.io
 #endif
         }
 
-        public static long skip(object _this, long n, [In] global::java.io.FileDescriptor fd)
+        public static long skip0(object _this, long n, [In] global::java.io.FileDescriptor fd)
         {
 #if FIRST_PASS
         return 0;
@@ -65,7 +65,7 @@ namespace IKVM.Java.Externs.java.io
 #endif
         }
 
-        public static int available(object _this, [In] global::java.io.FileDescriptor fd)
+        public static int available0(object _this, [In] global::java.io.FileDescriptor fd)
         {
 #if FIRST_PASS
         return 0;

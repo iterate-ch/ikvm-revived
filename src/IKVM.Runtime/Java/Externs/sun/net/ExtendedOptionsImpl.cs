@@ -48,7 +48,49 @@ namespace IKVM.Java.Externs.sun.net
 #endif
         }
 
+        public static void setTcpKeepAliveProbes(global::java.io.FileDescriptor fd, int i)
+        {
+#if !FIRST_PASS
+            throw new global::java.lang.UnsupportedOperationException();
+#endif
+        }
+
+        public static void setTcpKeepAliveTime(global::java.io.FileDescriptor fd, int i)
+        {
+#if !FIRST_PASS
+            throw new global::java.lang.UnsupportedOperationException();
+#endif
+        }
+
+        public static void setTcpKeepAliveIntvl(global::java.io.FileDescriptor fd, int i)
+        {
+#if !FIRST_PASS
+            throw new global::java.lang.UnsupportedOperationException();
+#endif
+        }
+
+        public static int getTcpKeepAliveProbes(global::java.io.FileDescriptor fd)
+        {
+            return 0;
+        }
+
+        public static int getTcpKeepAliveTime(global::java.io.FileDescriptor fd)
+        {
+            return 0;
+        }
+
+        public static int getTcpKeepAliveIntvl(global::java.io.FileDescriptor fd)
+        {
+            return 0;
+        }
+
         public static bool flowSupported()
+        {
+            // We don't support this. Solaris only functionality.
+            return false;
+        }
+
+        public static bool keepAliveOptionsSupported()
         {
             // We don't support this. Solaris only functionality.
             return false;

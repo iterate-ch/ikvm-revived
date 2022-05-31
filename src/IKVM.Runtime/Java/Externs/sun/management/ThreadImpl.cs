@@ -163,6 +163,16 @@ namespace IKVM.Java.Externs.sun.management
             throw new System.NotImplementedException();
         }
 
+        public static long getThreadAllocatedMemory0(long l)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public static long getThreadAllocatedMemory0(object _this, long l)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public static void getThreadAllocatedMemory1(long[] ids, long[] result)
         {
             throw new System.NotImplementedException();
@@ -198,7 +208,7 @@ namespace IKVM.Java.Externs.sun.management
             throw new System.NotImplementedException();
         }
 
-        public static object dumpThreads0(long[] ids, bool lockedMonitors, bool lockedSynchronizers)
+        public static object dumpThreads0(long[] ids, bool lockedMonitors, bool lockedSynchronizers, int i)
         {
             throw new System.NotImplementedException();
         }

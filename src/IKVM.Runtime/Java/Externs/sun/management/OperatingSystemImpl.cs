@@ -102,7 +102,7 @@ namespace IKVM.Java.Externs.sun.management
         /// <summary>
         /// Initializes the static information.
         /// </summary>
-        public static void initialize()
+        public static void initialize0()
         {
             // determine OS platform up front
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
@@ -118,7 +118,7 @@ namespace IKVM.Java.Externs.sun.management
             return Process.GetCurrentProcess().PagedMemorySize64;
         }
 
-        public static long getTotalSwapSpaceSize(object _this)
+        public static long getTotalSwapSpaceSize0(object _this)
         {
             if (platform == OSPlatform.Windows)
             {
@@ -136,7 +136,7 @@ namespace IKVM.Java.Externs.sun.management
             }
         }
 
-        public static long getFreeSwapSpaceSize(object _this)
+        public static long getFreeSwapSpaceSize0(object _this)
         {
             if (platform == OSPlatform.Windows)
             {
@@ -154,7 +154,7 @@ namespace IKVM.Java.Externs.sun.management
             }
         }
 
-        public static long getFreePhysicalMemorySize(object _this)
+        public static long getFreePhysicalMemorySize0(object _this)
         {
             if (platform == OSPlatform.Windows)
             {
@@ -171,7 +171,7 @@ namespace IKVM.Java.Externs.sun.management
             }
         }
 
-        public static long getTotalPhysicalMemorySize(object _this)
+        public static long getTotalPhysicalMemorySize0(object _this)
         {
             if (platform == OSPlatform.Windows)
             {
@@ -188,17 +188,17 @@ namespace IKVM.Java.Externs.sun.management
             }
         }
 
-        public static long getProcessCpuTime(object _this)
+        public static long getProcessCpuTime0(object _this)
         {
             return Process.GetCurrentProcess().TotalProcessorTime.Ticks * 100;
         }
 
-        public static double getSystemCpuLoad(object _this)
+        public static double getSystemCpuLoad0(object _this)
         {
             return -1;
         }
 
-        public static double getProcessCpuLoad(object _this)
+        public static double getProcessCpuLoad0(object _this)
         {
             return -1;
         }
