@@ -55,6 +55,18 @@ namespace IKVM.Tests.java.lang
             new global::java.io.File(Path.Combine(VfsTable.HomePath, "lib", "tzdb.dat")).length().Should().BeGreaterThan(1);
         }
 
+        [TestMethod]
+        public void Can_open_filechannel_write()
+        {
+            var f = new global::java.io.File(Path.Combine(Path.GetTempPath(), Path.GetRandomFileName()));
+            f.createNewFile();
+            var o = new global::java.util.HashSet();
+            o.add(global::java.nio.file.StandardOpenOption.WRITE);
+            o.add(global::java.nio.file.StandardOpenOption.TRUNCATE_EXISTING);
+            var c = global::java.nio.channels.FileChannel.open(f.toPath(), o);
+            c.close();
+        }
+
     }
 
 }
