@@ -22,12 +22,9 @@
   
 */
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-
-using com.sun.org.apache.xpath.@internal;
 
 using IKVM.Internal;
 using IKVM.Runtime.Text;
@@ -231,7 +228,7 @@ namespace IKVM.Runtime
         /// <param name="p_env"></param>
         /// <param name="vm_args"></param>
         /// <returns></returns>
-        public static int CreateJavaVM(JavaVM** p_vm, void* p_env, void* vm_args)
+        public static int CreateJavaVM(void* p_vm, void* p_env, void* vm_args)
         {
             var pInitArgs = (JavaVMInitArgs*)vm_args;
 
@@ -272,7 +269,7 @@ namespace IKVM.Runtime
             // initialize the JVM
             IKVM.Java.Externs.java.lang.VMSystemProperties.ImportProperties = properties;
             java.lang.Thread.currentThread();
-            *p_vm = JavaVM.pJavaVM;
+            *(void**)p_vm = JavaVM.pJavaVM;
 
             return JavaVM.AttachCurrentThread(JavaVM.pJavaVM, (void**)p_env, null);
         }
