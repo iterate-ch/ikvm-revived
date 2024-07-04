@@ -81,7 +81,14 @@ namespace IKVM.Runtime
         /// <returns></returns>
         internal static string GetClassName(byte[] bytes, int offset, int length, out bool isstub)
         {
-            return GetClassName(ClassReader.Read(bytes.AsMemory(offset, length)), out isstub);
+            try
+            {
+                return GetClassName(ClassReader.Read(bytes.AsMemory(offset, length)), out isstub);
+            }
+            catch (UnsupportedClassVersionException classVersion)
+            {
+                throw new UnsupportedClassVersionError(classVersion.Message);
+            }
         }
 
         /// <summary>
