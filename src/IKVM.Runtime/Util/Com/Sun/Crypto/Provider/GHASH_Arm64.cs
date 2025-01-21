@@ -65,11 +65,11 @@ namespace IKVM.Runtime.Util.Com.Sun.Crypto.Provider
 
         private static (Vector128<long> Lower, Vector128<long> Upper) GHashMultiply(Vector128<long> a, Vector128<byte> b, Vector128<byte> a1_xor_a0)
         {
-            var tmp1 = AdvSimd.ExtractVector128(b.AsByte(), b, 0x08).AsInt64();
+            var tmp1 = AdvSimd.ExtractVector128(b, b, 0x08);
             var result_hi = Aes.PolynomialMultiplyWideningUpper(b.AsInt64(), a);
-            tmp1 = AdvSimd.Xor(tmp1, b.AsInt64());
+            tmp1 = AdvSimd.Xor(tmp1, b);
             var result_lo = Aes.PolynomialMultiplyWideningLower(b.GetLower().AsInt64(), a.GetLower());
-            var tmp2 = Aes.PolynomialMultiplyWideningLower(tmp1.GetLower(), a1_xor_a0.GetLower().AsInt64());
+            var tmp2 = Aes.PolynomialMultiplyWideningLower(tmp1.GetLower().AsInt64(), a1_xor_a0.GetLower().AsInt64());
 
             var tmp4 = AdvSimd.ExtractVector128(result_lo.AsByte(), result_hi.AsByte(), 0x08);
             var tmp3 = AdvSimd.Xor(result_hi, result_lo);
@@ -85,10 +85,10 @@ namespace IKVM.Runtime.Util.Com.Sun.Crypto.Provider
         private static Vector128<long> GHashReduce(Vector128<long> lo, Vector128<long> hi, Vector128<long> p, Vector128<byte> z)
         {
             var result = Aes.PolynomialMultiplyWideningUpper(hi, p);
-            var t1 = AdvSimd.ExtractVector128(result.AsByte(), z, 8).AsInt64();
-            hi = AdvSimd.Xor(hi, t1);
-            t1 = AdvSimd.ExtractVector128(z, result.AsByte(), 8).AsInt64();
-            lo = AdvSimd.Xor(lo, t1);
+            var t1 = AdvSimd.ExtractVector128(result.AsByte(), z, 8);
+            hi = AdvSimd.Xor(hi, t1.AsInt64());
+            t1 = AdvSimd.ExtractVector128(z, result.AsByte(), 8);
+            lo = AdvSimd.Xor(lo, t1.AsInt64());
             result = Aes.PolynomialMultiplyWideningLower(hi.GetLower(), p.GetLower());
             result = AdvSimd.Xor(lo, result);
             return result;
